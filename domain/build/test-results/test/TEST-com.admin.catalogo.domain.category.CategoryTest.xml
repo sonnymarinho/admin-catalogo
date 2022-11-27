@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.admin.catalogo.domain.category.CategoryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-11-27T16:51:29" hostname="pc" time="0.03">
+  <properties/>
+  <testcase name="givenAnNullDescriptionLengthLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.019"/>
+  <testcase name="givenAnInvalidDescriptionLengthMoreThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAnInvalidDescriptionLengthLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAnInvalidNameLengthMoreThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenABlankName_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAValidParams_whenCallNewCategory_thenInstantiateACategory()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAnValidEmptyDescription_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
