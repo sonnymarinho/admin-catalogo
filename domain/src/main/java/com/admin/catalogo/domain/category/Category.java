@@ -4,6 +4,10 @@ import com.admin.catalogo.domain.AgregateRoot;
 import com.admin.catalogo.domain.validation.ValidationHandler;
 
 import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
+import java.time.temporal.TemporalUnit;
+import java.util.Objects;
 import java.util.UUID;
 
 public class Category extends AgregateRoot<CategoryID> {
@@ -90,5 +94,35 @@ public class Category extends AgregateRoot<CategoryID> {
 
     public void setDeletedAt(Instant deletedAt) {
         this.deletedAt = deletedAt;
+    }
+
+    public Category deactivate() {
+        if (Objects.isNull(getDeletedAt())) this.deletedAt = Instant.now();
+
+        this.active = false;
+        this.updatedAt = Instant.now();
+
+        return this;
+    }
+
+    public Category activate() {
+        this.deletedAt = null;
+        this.active = true;
+        this.updatedAt = Instant.now();
+
+        return this;
+    }
+
+    public Category update(final String aName,
+                       final String aDescription,
+                       final boolean isActive) {
+        this.name = aName;
+        this.description = aDescription;
+
+        if(isActive) activate(); else deactivate();
+
+        this.updatedAt = Instant.now();
+
+        return this;
     }
 }
