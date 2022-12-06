@@ -13,7 +13,7 @@ public interface ValidationHandler {
 
     List<Error> getErrors();
 
-    public interface Validation {
+    interface Validation {
         void validate();
     }
 }

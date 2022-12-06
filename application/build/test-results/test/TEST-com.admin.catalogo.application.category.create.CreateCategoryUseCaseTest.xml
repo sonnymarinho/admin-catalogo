@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-06T22:20:46" hostname="pc" time="0.356">
+  <properties/>
+  <testcase name="givenAValidComand_whenGatewayTrhowsRandomException_shouldReturnAException()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.356"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

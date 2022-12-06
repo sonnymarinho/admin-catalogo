@@ -43,6 +43,11 @@ public class Category extends AgregateRoot<CategoryID> {
         return new Category(id, aName, aDescription, isActive, now, now, aDeleteDate);
     }
 
+    public static Category newCategory(final String aName,
+                                       final String aDescription) {
+        return Category.newCategory(aName, aDescription, true);
+    }
+
     @Override
     public void validate(final ValidationHandler handler) {
         new CategoryValidator(this, handler).validate();
