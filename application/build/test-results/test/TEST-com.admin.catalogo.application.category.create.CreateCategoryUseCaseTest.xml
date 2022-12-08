@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-06T22:20:46" hostname="pc" time="0.356">
+<testsuite name="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-08T22:56:41" hostname="pc" time="0.394">
   <properties/>
-  <testcase name="givenAValidComand_whenGatewayTrhowsRandomException_shouldReturnAException()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.356"/>
+  <testcase name="givenAValidComand_whenCallsCreateCategory_shouldReturnCategoryId()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.38"/>
+  <testcase name="givenAValidComand_whenGatewayTrhowsRandomException_shouldReturnAException()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.007"/>
+  <testcase name="givenAValidComandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.003"/>
+  <testcase name="givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException()" classname="com.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
