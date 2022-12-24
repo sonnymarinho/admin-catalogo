@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-24T17:19:02" hostname="pc" time="0.418">
+  <properties/>
+  <testcase name="givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId()" classname="com.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest" time="0.418"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
