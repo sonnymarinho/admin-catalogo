@@ -1,6 +1,5 @@
-package com.admin.catalogo.application.category.retrieve;
+package com.admin.catalogo.application.category.retrieve.get;
 
-import com.admin.catalogo.application.category.retrieve.get.CategoryOutput;
 import com.admin.catalogo.domain.category.Category;
 import com.admin.catalogo.domain.category.CategoryGateway;
 import com.admin.catalogo.domain.category.CategoryID;

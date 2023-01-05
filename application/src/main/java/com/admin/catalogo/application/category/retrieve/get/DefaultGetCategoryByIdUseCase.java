@@ -1,7 +1,5 @@
-package com.admin.catalogo.application.category.retrieve;
+package com.admin.catalogo.application.category.retrieve.get;
 
-import com.admin.catalogo.application.UseCase;
-import com.admin.catalogo.application.category.retrieve.get.CategoryOutput;
 import com.admin.catalogo.domain.category.CategoryGateway;
 import com.admin.catalogo.domain.category.CategoryID;
 import com.admin.catalogo.domain.exceptions.DomainException;
@@ -10,7 +8,7 @@ import com.admin.catalogo.domain.validation.Error;
 import java.util.Objects;
 import java.util.function.Supplier;
 
-public class DefaultGetCategoryByIdUseCase extends UseCase<String, CategoryOutput> {
+public class DefaultGetCategoryByIdUseCase extends GetCategoryByIdUseCase {
 
     private final CategoryGateway categoryGateway;
 
