@@ -1,0 +1,32 @@
+
+(  .   ____          _            __ _ _
+) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+*( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
++ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+*  '  |____| .__|_| |_|_| |_\__, | / / / /
+) =========|_|==============|___/=/_/_/_/
++ :: Spring Boot ::                (v2.6.7)
+
+Ï2023-01-04 23:14:15.827  INFO 38624 --- [    Test worker] c.a.catalogo.infrastructure.Application  : Starting Application using Java 17.0.2 on pc with PID 38624 (started by sm in /home/sm/dev/repositories/admin-catalogo/infrastructure)
+è2023-01-04 23:14:15.830  INFO 38624 --- [    Test worker] c.a.catalogo.infrastructure.Application  : The following 1 profile is active: "test"
+°2023-01-04 23:14:16.341  INFO 38624 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+∫2023-01-04 23:14:16.352  INFO 38624 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+¡2023-01-04 23:14:16.789  WARN 38624 --- [    Test worker] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+ò2023-01-04 23:14:16.802  INFO 38624 --- [    Test worker] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+§2023-01-04 23:14:16.803  INFO 38624 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+Ä2023-01-04 23:14:16.830  INFO 38624 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2023-01-04 23:14:16.954  INFO 38624 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+∏2023-01-04 23:14:16.965  INFO 38624 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:adm_videos_test'
+ü2023-01-04 23:14:17.060  INFO 38624 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ó2023-01-04 23:14:17.094  INFO 38624 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+û2023-01-04 23:14:17.211  INFO 38624 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ü2023-01-04 23:14:17.289  INFO 38624 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2023-01-04 23:14:17.435  INFO 38624 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2023-01-04 23:14:17.441  INFO 38624 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+ù2023-01-04 23:14:17.477  WARN 38624 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+é2023-01-04 23:14:17.764  INFO 38624 --- [    Test worker] io.undertow                              : starting server: Undertow - 2.2.17.Final
+~2023-01-04 23:14:17.770  INFO 38624 --- [    Test worker] org.xnio                                 : XNIO version 3.8.6.Final
+ë2023-01-04 23:14:17.780  INFO 38624 --- [    Test worker] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+á2023-01-04 23:14:17.857  INFO 38624 --- [    Test worker] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+ç2023-01-04 23:14:17.882  INFO 38624 --- [    Test worker] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+¢2023-01-04 23:14:17.891  INFO 38624 --- [    Test worker] c.a.catalogo.infrastructure.Application  : Started Application in 2.389 seconds (JVM running for 3.026)
