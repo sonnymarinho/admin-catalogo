@@ -1,3 +1,9 @@
+mysql:
+  username: root
+  password: 123456
+  schema: adm_videos
+  url: 127.0.0.1:3306
+
 server:
   port: 8081
   compression:
