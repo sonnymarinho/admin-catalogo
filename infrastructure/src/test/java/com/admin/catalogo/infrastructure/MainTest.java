@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.springframework.core.env.AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME;
 
-class ApplicationTest {
+class MainTest {
 
     @Test
     public void testMain() {
         System.setProperty(ACTIVE_PROFILES_PROPERTY_NAME, "test");
-        Assertions.assertNotNull(new Application());
-        Application.main(new String[]{});
+        Assertions.assertNotNull(new Main());
+        Main.main(new String[]{});
     }
 
 }

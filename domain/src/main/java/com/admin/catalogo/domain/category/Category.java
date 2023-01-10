@@ -25,8 +25,8 @@ public class Category extends AgregateRoot<CategoryID> implements Cloneable {
         this.name = aName;
         this.description = aDescription;
         this.active = isActive;
-        this.createdAt = aCreationDate;
-        this.updatedAt = aUpdateDate;
+        this.createdAt = Objects.requireNonNull(aCreationDate, "'createdAt' should not be null");
+        this.updatedAt = Objects.requireNonNull(aUpdateDate, "'updatedAt' should not be null");
         this.deletedAt = aDeleteDate;
     }
 
@@ -48,6 +48,25 @@ public class Category extends AgregateRoot<CategoryID> implements Cloneable {
         return aCategory.clone();
     }
 
+    public static Category with(
+            final CategoryID anId,
+            final String aName,
+            final String aDescription,
+            final boolean isActive,
+            final Instant aCreationDate,
+            final Instant aUpdateDate,
+            final Instant aDeleteDate) {
+
+        return new Category(
+                anId,
+                aName,
+                aDescription,
+                isActive,
+                aCreationDate,
+                aUpdateDate,
+                aDeleteDate
+        );
+    }
     @Override
     public void validate(final ValidationHandler handler) {
         new CategoryValidator(this, handler).validate();
