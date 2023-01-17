@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MainTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MainTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.admin.catalogo.infrastructure.html">com.admin.catalogo.infrastructure</a> &gt; MainTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.576s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testMain()</td>
+<td class="success">0.576s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2023-01-17 19:15:01.860  INFO 28453 --- [    Test worker] com.admin.catalogo.infrastructure.Main   : Starting Main using Java 17.0.2 on pc with PID 28453 (started by sm in /home/sm/dev/repositories/admin-catalogo/infrastructure)
+2023-01-17 19:15:01.860  INFO 28453 --- [    Test worker] com.admin.catalogo.infrastructure.Main   : The following 1 profile is active: &quot;test&quot;
+2023-01-17 19:15:01.967  INFO 28453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-17 19:15:01.972  INFO 28453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-01-17 19:15:02.076  WARN 28453 --- [    Test worker] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-01-17 19:15:02.090  INFO 28453 --- [    Test worker] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-01-17 19:15:02.090  INFO 28453 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2023-01-17 19:15:02.100  INFO 28453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Starting...
+2023-01-17 19:15:02.102  INFO 28453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Start completed.
+2023-01-17 19:15:02.102  INFO 28453 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:adm_videos_test'
+2023-01-17 19:15:02.148  INFO 28453 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2023-01-17 19:15:02.148  INFO 28453 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:adm_videos_test (H2 1.4)
+2023-01-17 19:15:02.154  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2023-01-17 19:15:02.162  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: 1
+2023-01-17 19:15:02.164  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;public&quot; is up to date. No migration necessary.
+2023-01-17 19:15:02.175  INFO 28453 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-17 19:15:02.179  INFO 28453 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-17 19:15:02.198  INFO 28453 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-17 19:15:02.199  INFO 28453 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-17 19:15:02.312  INFO 28453 --- [    Test worker] io.undertow                              : starting server: Undertow - 2.2.17.Final
+2023-01-17 19:15:02.318  INFO 28453 --- [    Test worker] org.xnio                                 : XNIO version 3.8.6.Final
+2023-01-17 19:15:02.324  INFO 28453 --- [    Test worker] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+2023-01-17 19:15:02.382  INFO 28453 --- [    Test worker] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-01-17 19:15:02.408  INFO 28453 --- [    Test worker] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2023-01-17 19:15:02.411  INFO 28453 --- [    Test worker] com.admin.catalogo.infrastructure.Main   : Started Main in 0.574 seconds (JVM running for 5.759)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 17 de jan. de 2023 19:15:03</p>
+</div>
+</div>
+</body>
+</html>

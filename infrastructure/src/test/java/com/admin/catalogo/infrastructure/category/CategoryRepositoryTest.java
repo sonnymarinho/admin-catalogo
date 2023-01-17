@@ -2,7 +2,7 @@ package com.admin.catalogo.infrastructure.category;
 
 import com.admin.catalogo.domain.category.Category;
 import com.admin.catalogo.infrastructure.category.persistence.CategoryJPAEntity;
-import com.admin.catalogo.infrastructure.category.persistence.MySQLGatewayTest;
+import com.admin.catalogo.MySQLGatewayTest;
 import org.hibernate.PropertyValueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
