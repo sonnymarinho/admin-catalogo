@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.domain.category.CategoryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:14:56" hostname="pc" time="0.046">
+<testsuite name="com.admin.catalogo.domain.category.CategoryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:47:42" hostname="pc" time="0.041">
   <properties/>
-  <testcase name="givenAnNullDescriptionLengthLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.026"/>
-  <testcase name="givenAValidInactiveCategory_whenCallActivate_thenReturnCategoryActivated()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.002"/>
+  <testcase name="givenAnNullDescriptionLengthLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.022"/>
+  <testcase name="givenAValidInactiveCategory_whenCallActivate_thenReturnCategoryActivated()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.003"/>
   <testcase name="givenAValidFalseIsActive_whenCallNewCategoryAndValidate_thenShouldNotReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAnInvalidDescriptionLengthMoreThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAnInvalidDescriptionLengthLessThan3_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
@@ -13,7 +13,7 @@
   <testcase name="givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnCategoryUpdated()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAValidParams_whenCallNewCategory_thenInstantiateACategory()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
-  <testcase name="givenAnValidEmptyDescription_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.0"/>
+  <testcase name="givenAnValidEmptyDescription_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

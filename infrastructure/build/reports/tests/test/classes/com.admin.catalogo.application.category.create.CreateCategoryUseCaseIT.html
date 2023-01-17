@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.207s</div>
+<div class="counter">0.216s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException()</td>
-<td class="success">0.011s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidComandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId()</td>
-<td class="success">0.010s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidComand_whenCallsCreateCategory_shouldReturnCategoryId()</td>
-<td class="success">0.173s</td>
+<td class="success">0.187s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidComand_whenGatewayTrhowsRandomException_shouldReturnAException()</td>
-<td class="success">0.013s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,17 +102,17 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>19:14:57.347 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-19:14:57.355 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-19:14:57.384 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-19:14:57.393 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT], using SpringBootContextLoader
-19:14:57.396 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/admin/catalogo/application/category/create/CreateCategoryUseCaseIT-context.xml] does not exist
-19:14:57.396 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/admin/catalogo/application/category/create/CreateCategoryUseCaseITContext.groovy] does not exist
-19:14:57.396 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
-19:14:57.502 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: using defaults.
-19:14:57.502 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-19:14:57.512 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3c435123, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50fe837a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3a62c01e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a8fa663, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ce33a58, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78a287ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@546ccad7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5357c287, org.springframework.test.context.event.EventPublishingTestExecutionListener@1623134f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a527389, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@485a3466, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25748410, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b43529a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4264b240, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b04476e]
-19:14:57.514 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@305f7627 testClass = CreateCategoryUseCaseIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5d018107 testClass = CreateCategoryUseCaseIT, locations = '{}', classes = '{class com.admin.catalogo.infrastructure.configuration.WebServerConfig}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@294a6b8e, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@797cf65c, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4fad9bb2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3a12c404, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@4f6c0ee8, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4ff4357f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@fd07cbb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>19:47:43.593 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:47:43.601 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:47:43.637 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:47:43.647 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT], using SpringBootContextLoader
+19:47:43.650 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/admin/catalogo/application/category/create/CreateCategoryUseCaseIT-context.xml] does not exist
+19:47:43.650 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/admin/catalogo/application/category/create/CreateCategoryUseCaseITContext.groovy] does not exist
+19:47:43.650 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:47:43.766 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: using defaults.
+19:47:43.767 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:47:43.778 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@33e01298, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@31e75d13, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@a5b0b86, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b3c354a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@78fb9a67, org.springframework.test.context.support.DirtiesContextTestExecutionListener@73ff4fae, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21aa6d6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@b968a76, org.springframework.test.context.event.EventPublishingTestExecutionListener@2f9a01c1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2611b9a3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@54227100, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b5894c8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1433046b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3f446bef, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7829b776]
+19:47:43.782 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@74cadd41 testClass = CreateCategoryUseCaseIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2e54db99 testClass = CreateCategoryUseCaseIT, locations = '{}', classes = '{class com.admin.catalogo.infrastructure.configuration.WebServerConfig}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5dcd8c7a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e54303, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f40e5db, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@530712d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@7c93925a, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25bfcafd, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@fd07cbb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -122,27 +122,27 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.7)
 
-2023-01-17 19:14:57.794  INFO 28453 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : Starting CreateCategoryUseCaseIT using Java 17.0.2 on pc with PID 28453 (started by sm in /home/sm/dev/repositories/admin-catalogo/infrastructure)
-2023-01-17 19:14:57.795  INFO 28453 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : The following 1 profile is active: &quot;test&quot;
-2023-01-17 19:14:58.306  INFO 28453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-17 19:14:58.340  INFO 28453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
-2023-01-17 19:14:58.760  INFO 28453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Starting...
-2023-01-17 19:14:58.883  INFO 28453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Start completed.
-2023-01-17 19:14:58.891  INFO 28453 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
-2023-01-17 19:14:58.892  INFO 28453 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:adm_videos_test (H2 1.4)
-2023-01-17 19:14:58.941  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.017s)
-2023-01-17 19:14:58.958  INFO 28453 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
-2023-01-17 19:14:59.018  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
-2023-01-17 19:14:59.025  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - Initial&quot;
-2023-01-17 19:14:59.046  INFO 28453 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.039s)
-2023-01-17 19:14:59.176  INFO 28453 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-01-17 19:14:59.212  INFO 28453 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
-2023-01-17 19:14:59.336  INFO 28453 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-01-17 19:14:59.403  INFO 28453 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-01-17 19:14:59.753  INFO 28453 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-17 19:14:59.763  INFO 28453 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-17 19:15:00.517  INFO 28453 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:adm_videos_test'
-2023-01-17 19:15:00.763  INFO 28453 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : Started CreateCategoryUseCaseIT in 3.22 seconds (JVM running for 4.111)
+2023-01-17 19:47:44.082  INFO 33911 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : Starting CreateCategoryUseCaseIT using Java 17.0.2 on pc with PID 33911 (started by sm in /home/sm/dev/repositories/admin-catalogo/infrastructure)
+2023-01-17 19:47:44.084  INFO 33911 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : The following 1 profile is active: &quot;test&quot;
+2023-01-17 19:47:44.664  INFO 33911 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-17 19:47:44.706  INFO 33911 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2023-01-17 19:47:45.164  INFO 33911 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Starting...
+2023-01-17 19:47:45.307  INFO 33911 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Start completed.
+2023-01-17 19:47:45.320  INFO 33911 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2023-01-17 19:47:45.320  INFO 33911 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:adm_videos_test (H2 1.4)
+2023-01-17 19:47:45.380  INFO 33911 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.020s)
+2023-01-17 19:47:45.400  INFO 33911 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2023-01-17 19:47:45.455  INFO 33911 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2023-01-17 19:47:45.462  INFO 33911 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - Initial&quot;
+2023-01-17 19:47:45.489  INFO 33911 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.043s)
+2023-01-17 19:47:45.630  INFO 33911 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-17 19:47:45.667  INFO 33911 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2023-01-17 19:47:45.795  INFO 33911 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-17 19:47:45.876  INFO 33911 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-17 19:47:46.239  INFO 33911 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-17 19:47:46.245  INFO 33911 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-17 19:47:47.130  INFO 33911 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:adm_videos_test'
+2023-01-17 19:47:47.393  INFO 33911 --- [    Test worker] c.a.c.a.c.c.CreateCategoryUseCaseIT      : Started CreateCategoryUseCaseIT in 3.577 seconds (JVM running for 4.489)
 Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
 Hibernate: select count(*) as col_0_0_ from category categoryjp0_
 Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_0_, categoryjp0_.created_at as created_3_0_0_, categoryjp0_.deleted_at as deleted_4_0_0_, categoryjp0_.description as descript5_0_0_, categoryjp0_.name as name6_0_0_, categoryjp0_.updated_at as updated_7_0_0_ from category categoryjp0_ where categoryjp0_.id=?
@@ -172,7 +172,7 @@ Hibernate: select count(*) as col_0_0_ from category categoryjp0_
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 17 de jan. de 2023 19:15:03</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 17 de jan. de 2023 19:47:50</p>
 </div>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.application.category.UseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:14:55" hostname="pc" time="0.32">
+<testsuite name="com.admin.catalogo.application.category.UseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:47:41" hostname="pc" time="0.315">
   <properties/>
-  <testcase name="testCreateUseCase()" classname="com.admin.catalogo.application.category.UseCaseTest" time="0.32"/>
+  <testcase name="testCreateUseCase()" classname="com.admin.catalogo.application.category.UseCaseTest" time="0.315"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

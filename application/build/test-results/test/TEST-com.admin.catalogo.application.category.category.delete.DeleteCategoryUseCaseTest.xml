@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:14:55" hostname="pc" time="0.011">
+<testsuite name="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:47:41" hostname="pc" time="0.013">
   <properties/>
-  <testcase name="givenAValidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" time="0.005"/>
+  <testcase name="givenAValidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" time="0.006"/>
   <testcase name="givenAnInvalidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" time="0.002"/>
   <testcase name="givenAValidId_whenGatewayThrowsException_shouldReturnException()" classname="com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCaseTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>

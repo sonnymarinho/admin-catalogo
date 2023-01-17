@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.application.category.category.retrieve.list.ListCategoriesUseCase" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:14:55" hostname="pc" time="0.016">
-  <properties/>
-  <testcase name="givenAValidQuery_whenHasNoResults_thenShouldReturnEmptyCategories()" classname="com.admin.catalogo.application.category.category.retrieve.list.ListCategoriesUseCase" time="0.006"/>
-  <testcase name="givenAValidQuery_whenCallsListCategories_thenShouldReturnCategories()" classname="com.admin.catalogo.application.category.category.retrieve.list.ListCategoriesUseCase" time="0.007"/>
-  <testcase name="givenAValidQuery_whenGatewayThrowsException_thenShouldReturnException()" classname="com.admin.catalogo.application.category.category.retrieve.list.ListCategoriesUseCase" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

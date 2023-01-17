@@ -1,4 +1,4 @@
-package com.admin.catalogo.application.category.retrieve;
+package com.admin.catalogo.application.category.retrieve.get;
 
 import com.admin.catalogo.IntegrationTest;
 import com.admin.catalogo.application.category.category.create.CreateCategoryUseCase;
