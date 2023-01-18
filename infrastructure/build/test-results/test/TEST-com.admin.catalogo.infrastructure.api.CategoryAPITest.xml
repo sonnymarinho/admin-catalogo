@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.admin.catalogo.infrastructure.api.CategoryAPITest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-18T21:59:20" hostname="pc" time="0.218">
+  <properties/>
+  <testcase name="givenAValidComand_whenCallsCreateCategory_shouldReturnCategoryId()" classname="com.admin.catalogo.infrastructure.api.CategoryAPITest" time="0.218"/>
+  <system-out><![CDATA[18:59:18.376 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:59:18.385 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:59:18.432 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+18:59:18.442 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest], using SpringBootContextLoader
+18:59:18.445 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest]: class path resource [com/admin/catalogo/infrastructure/api/CategoryAPITest-context.xml] does not exist
+18:59:18.446 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest]: class path resource [com/admin/catalogo/infrastructure/api/CategoryAPITestContext.groovy] does not exist
+18:59:18.446 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:59:18.446 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.admin.catalogo.infrastructure.api.CategoryAPITest]: CategoryAPITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:59:18.570 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/sm/dev/repositories/admin-catalogo/infrastructure/build/classes/java/main/com/admin/catalogo/infrastructure/Main.class]
+18:59:18.572 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.admin.catalogo.infrastructure.Main for test class com.admin.catalogo.infrastructure.api.CategoryAPITest
+18:59:18.576 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.admin.catalogo.infrastructure.api.CategoryAPITest]: using defaults.
+18:59:18.577 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+18:59:18.588 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40f1be1b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a791b66, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6f2cb653, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@14c01636, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@590c73d3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b9ce1bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61884cb1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75ed9710, org.springframework.test.context.event.EventPublishingTestExecutionListener@4fc5e095, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@435871cb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@609640d5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@79da1ec0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@19fb8826, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@192d74fb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4bef0fe3]
+18:59:18.592 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1e63ec0b testClass = CategoryAPITest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3b956878 testClass = CategoryAPITest, locations = '{}', classes = '{class com.admin.catalogo.infrastructure.Main}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@62ef27a8, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@25aca718, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@511aace, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@f48a17df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2b4c1d96, [ImportsContextCustomizer@36546a22 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@73a2e526, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@cd1d761, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@30a4e7e2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2023-01-18 18:59:18.960  INFO 15942 --- [    Test worker] c.a.c.i.api.CategoryAPITest              : Starting CategoryAPITest using Java 17.0.2 on pc with PID 15942 (started by sm in /home/sm/dev/repositories/admin-catalogo/infrastructure)
+2023-01-18 18:59:18.961  INFO 15942 --- [    Test worker] c.a.c.i.api.CategoryAPITest              : The following 1 profile is active: "test"
+2023-01-18 18:59:20.852  INFO 15942 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-01-18 18:59:20.852  INFO 15942 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-01-18 18:59:20.853  INFO 15942 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-01-18 18:59:20.880  INFO 15942 --- [    Test worker] c.a.c.i.api.CategoryAPITest              : Started CategoryAPITest in 2.247 seconds (JVM running for 3.184)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /categories
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"77"]
+             Body = {"name":"Filmes","description":"A categoria mais assistida","is_active":true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.admin.catalogo.infrastructure.api.controller.CategoryController
+           Method = com.admin.catalogo.infrastructure.api.controller.CategoryController#createCategory(CreateCategoryAPIInput)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Location:"/categories/123", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"123"}
+    Forwarded URL = null
+   Redirected URL = /categories/123
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
