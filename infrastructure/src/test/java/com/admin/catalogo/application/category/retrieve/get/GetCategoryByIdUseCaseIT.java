@@ -32,7 +32,7 @@ public class GetCategoryByIdUseCaseIT {
     private CategoryGateway categoryGateway;
 
     @Test
-    void givenAValidId_whenCallsDeleteCategory_shouldBeOK() {
+    void givenAValidId_whenCallsGetCategoryById_shouldBeOK() {
         final var expectedName = "Filmes";
         final var expectedDescription = "A categoria mais assistida";
         final var expectedState = true;
@@ -52,11 +52,6 @@ public class GetCategoryByIdUseCaseIT {
         Assertions.assertEquals(actualCategory.updatedAt(), aCategory.getUpdatedAt());
         Assertions.assertEquals(actualCategory.deletedAt(), aCategory.getDeletedAt());
         Assertions.assertEquals(CategoryOutput.from(aCategory), actualCategory);
-    }
-
-    private void save(final Category... aCategory) {
-        List<CategoryJPAEntity> entities = Arrays.stream(aCategory).map(CategoryJPAEntity::from).toList();
-        categoryRepository.saveAllAndFlush(entities);
     }
 
     @Test
@@ -92,4 +87,8 @@ public class GetCategoryByIdUseCaseIT {
         Assertions.assertEquals(actualErrorMessage, expectedErrorMessage);
     }
 
+    private void save(final Category... aCategory) {
+        List<CategoryJPAEntity> entities = Arrays.stream(aCategory).map(CategoryJPAEntity::from).toList();
+        categoryRepository.saveAllAndFlush(entities);
+    }
 }

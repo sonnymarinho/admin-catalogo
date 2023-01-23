@@ -1,4 +1,5 @@
 package com.admin.catalogo.domain;
 
-public class Identifier {
+public abstract class Identifier {
+    public abstract String getValue();
 }

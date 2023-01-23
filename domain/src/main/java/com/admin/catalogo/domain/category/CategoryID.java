@@ -2,7 +2,6 @@ package com.admin.catalogo.domain.category;
 
 import com.admin.catalogo.domain.Identifier;
 
-import java.util.Locale;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -39,6 +38,7 @@ public class CategoryID extends Identifier {
         return Objects.hash(value);
     }
 
+    @Override
     public String getValue() {
         return this.value;
     }

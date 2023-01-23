@@ -1,5 +1,7 @@
 package com.admin.catalogo.application.category.category.update;
 
+import java.util.Optional;
+
 public record UpdateCategoryCommand (
         String id,
         String name,
@@ -13,6 +15,7 @@ public record UpdateCategoryCommand (
             final String aDescription,
             final Boolean isActive
     ) {
-        return new UpdateCategoryCommand(anId, aName, aDescription, isActive);
+        final var validIsActive = Optional.ofNullable(isActive).orElse(true);
+        return new UpdateCategoryCommand(anId, aName, aDescription, validIsActive);
     }
 }

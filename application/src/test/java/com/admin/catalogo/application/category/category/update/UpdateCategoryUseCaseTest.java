@@ -4,6 +4,7 @@ import com.admin.catalogo.domain.category.Category;
 import com.admin.catalogo.domain.category.CategoryGateway;
 import com.admin.catalogo.domain.category.CategoryID;
 import com.admin.catalogo.domain.exceptions.DomainException;
+import com.admin.catalogo.domain.exceptions.NotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -195,17 +196,15 @@ class UpdateCategoryUseCaseTest {
         final var expectedErrorMessage = "Category with ID %s was not found".formatted(expectedId.getValue());
         final var expectedErrorCount = 1;
 
-        when(categoryGateway.findById(eq(expectedId)))
-                .thenReturn(Optional.empty());
+        when(categoryGateway.findById(eq(expectedId))).thenReturn(Optional.empty());
 
         final var aComand =
                 UpdateCategoryCommand.with(expectedId.getValue(), expectedName, expectedDescription, expectedIsActive);
 
-        DomainException actualException =
-                Assertions.assertThrows(DomainException.class, () -> updateCategoryUseCase.execute(aComand));
+        final var actualException =
+                Assertions.assertThrows(NotFoundException.class, () -> updateCategoryUseCase.execute(aComand));
 
-        assertEquals(expectedErrorCount, actualException.getErrors().size());
-        assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        assertEquals(expectedErrorMessage, actualException.getMessage());
 
         Mockito.verify(categoryGateway, times(1)).findById(eq(expectedId));
         Mockito.verify(categoryGateway, times(0)).update(any());

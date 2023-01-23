@@ -1,13 +1,13 @@
 package com.admin.catalogo.application.category.update;
 
 import com.admin.catalogo.IntegrationTest;
-import com.admin.catalogo.application.category.category.delete.DeleteCategoryUseCase;
 import com.admin.catalogo.application.category.category.update.UpdateCategoryCommand;
 import com.admin.catalogo.application.category.category.update.UpdateCategoryUseCase;
 import com.admin.catalogo.domain.category.Category;
 import com.admin.catalogo.domain.category.CategoryGateway;
 import com.admin.catalogo.domain.category.CategoryID;
 import com.admin.catalogo.domain.exceptions.DomainException;
+import com.admin.catalogo.domain.exceptions.NotFoundException;
 import com.admin.catalogo.infrastructure.category.CategoryRepository;
 import com.admin.catalogo.infrastructure.category.persistence.CategoryJPAEntity;
 import org.junit.jupiter.api.Assertions;
@@ -18,13 +18,11 @@ import org.springframework.boot.test.mock.mockito.SpyBean;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.AdditionalAnswers.returnsFirstArg;
-import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.times;
 
 @IntegrationTest
 public class UpdateCategoryUseCaseIT {
@@ -62,7 +60,7 @@ public class UpdateCategoryUseCaseIT {
         Assertions.assertNotNull(actualOutput);
         Assertions.assertNotNull(actualOutput.id());
 
-        final var actualCategory = categoryRepository.findById(actualOutput.id().getValue()).get();
+        final var actualCategory = categoryRepository.findById(actualOutput.id()).get();
 
         Assertions.assertEquals(actualCategory.getName(), expectedName);
         Assertions.assertEquals(actualCategory.getDescription(), expectedDescription);
@@ -107,19 +105,19 @@ public class UpdateCategoryUseCaseIT {
         final var expectedIsActive = false;
         final var expectedId = aCategory.getId();
 
-        final var aComand = UpdateCategoryCommand.with(
+        final var aCommand = UpdateCategoryCommand.with(
                 expectedId.getValue(),
                 expectedName,
                 expectedDescription,
                 expectedIsActive
         );
 
-        final var actualOutput = updateCategoryUseCase.execute(aComand).get();
+        final var actualOutput = updateCategoryUseCase.execute(aCommand).get();
 
         Assertions.assertNotNull(actualOutput.id());
         Assertions.assertNotNull(actualOutput);
 
-        final var actualCategory = categoryRepository.findById(actualOutput.id().getValue()).get();
+        final var actualCategory = categoryRepository.findById(actualOutput.id()).get();
 
         Assertions.assertEquals(actualCategory.getName(), expectedName);
         Assertions.assertEquals(actualCategory.getDescription(), expectedDescription);
@@ -130,7 +128,7 @@ public class UpdateCategoryUseCaseIT {
     }
 
     @Test
-    public void givenAValidComand_whenGatewayTrhowsRandomException_shouldReturnAException() {
+    public void givenAValidCommand_whenGatewayTrhowsRandomException_shouldReturnAException() {
         final var aCategory = Category.newCategory("Film", null, true);
 
         save(aCategory);
@@ -177,16 +175,14 @@ public class UpdateCategoryUseCaseIT {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = true;
         final var expectedErrorMessage = "Category with ID %s was not found".formatted(expectedId.getValue());
-        final var expectedErrorCount = 1;
 
         final var aComand =
                 UpdateCategoryCommand.with(expectedId.getValue(), expectedName, expectedDescription, expectedIsActive);
 
-        DomainException actualException =
-                Assertions.assertThrows(DomainException.class, () -> updateCategoryUseCase.execute(aComand));
+        NotFoundException actualException =
+                Assertions.assertThrows(NotFoundException.class, () -> updateCategoryUseCase.execute(aComand));
 
-        assertEquals(expectedErrorCount, actualException.getErrors().size());
-        assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        assertEquals(expectedErrorMessage, actualException.getMessage());
 
     }
 
@@ -194,4 +190,6 @@ public class UpdateCategoryUseCaseIT {
         List<CategoryJPAEntity> entities = Arrays.stream(aCategory).map(CategoryJPAEntity::from).toList();
         categoryRepository.saveAllAndFlush(entities);
     }
+
+
 }

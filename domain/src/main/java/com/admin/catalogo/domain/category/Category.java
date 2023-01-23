@@ -1,12 +1,12 @@
 package com.admin.catalogo.domain.category;
 
-import com.admin.catalogo.domain.AgregateRoot;
+import com.admin.catalogo.domain.AggregateRoot;
 import com.admin.catalogo.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 import java.util.Objects;
 
-public class Category extends AgregateRoot<CategoryID> implements Cloneable {
+public class Category extends AggregateRoot<CategoryID> implements Cloneable {
     private String name;
     private String description;
     private boolean active;
