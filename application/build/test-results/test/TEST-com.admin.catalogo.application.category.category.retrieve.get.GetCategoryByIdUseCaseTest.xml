@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.admin.catalogo.application.category.category.retrieve.get.GetCategoryByIdUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-17T22:47:41" hostname="pc" time="0.025">
-  <properties/>
-  <testcase name="givenAValidId_whenCallsDeleteCategory_shouldReturnNotFound()" classname="com.admin.catalogo.application.category.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.004"/>
-  <testcase name="givenAValidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.admin.catalogo.application.category.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.018"/>
-  <testcase name="givenAValidId_whenTheGatewayThrowsException_shouldReturnException()" classname="com.admin.catalogo.application.category.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
