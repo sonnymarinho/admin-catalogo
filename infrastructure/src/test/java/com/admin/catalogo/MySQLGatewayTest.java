@@ -18,6 +18,6 @@ import java.lang.annotation.*;
         }
 )
 @ActiveProfiles("test")
-@ExtendWith(CleanUpExtension.class)
+@ExtendWith(MySQLCleanUpExtension.class)
 public @interface MySQLGatewayTest {
 }
