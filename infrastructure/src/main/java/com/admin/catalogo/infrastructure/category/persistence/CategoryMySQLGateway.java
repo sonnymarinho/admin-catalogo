@@ -6,14 +6,11 @@ import com.admin.catalogo.domain.category.CategoryID;
 import com.admin.catalogo.domain.category.CategorySearchQuery;
 import com.admin.catalogo.domain.pagination.Pagination;
 import com.admin.catalogo.infrastructure.category.CategoryRepository;
-import com.admin.catalogo.infrastructure.utils.SpecificationUtils;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.*;
 import java.util.Optional;
 
 import static com.admin.catalogo.infrastructure.utils.SpecificationUtils.like;
@@ -65,7 +62,7 @@ public class CategoryMySQLGateway implements CategoryGateway {
         );
 
         //Busca dinamica pelo criterio terms (name ou description)
-        final var specifications = Optional.ofNullable(aQuery.categoryTerms())
+        final var specifications = Optional.ofNullable(aQuery.terms())
                 .filter(terms -> !terms.isBlank() && !terms.isEmpty())
                 .map(term -> {
                     Specification<CategoryJPAEntity> nameLike = like("name", term);

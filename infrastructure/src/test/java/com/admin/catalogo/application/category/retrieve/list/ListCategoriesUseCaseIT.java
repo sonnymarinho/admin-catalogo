@@ -1,11 +1,9 @@
 package com.admin.catalogo.application.category.retrieve.list;
 
 import com.admin.catalogo.IntegrationTest;
-import com.admin.catalogo.application.category.category.retrieve.list.CategoryListOutput;
 import com.admin.catalogo.application.category.category.retrieve.list.ListCategoriesUseCase;
 import com.admin.catalogo.domain.category.Category;
 import com.admin.catalogo.domain.category.CategorySearchQuery;
-import com.admin.catalogo.domain.pagination.Pagination;
 import com.admin.catalogo.infrastructure.category.CategoryRepository;
 import com.admin.catalogo.infrastructure.category.persistence.CategoryJPAEntity;
 import org.junit.jupiter.api.Assertions;
@@ -15,7 +13,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Arrays;
 import java.util.List;
 
 @IntegrationTest
